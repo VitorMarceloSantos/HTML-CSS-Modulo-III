@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{ /*Configurações gerais*/
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+html, body{
+    /*O ViewPort é usado para responsividade, cada view corresponde a 1/100 do tamanho da tela,sendo que 100view é igual o tamanho total da tela. Por exemplo a tela tem 1100px então 1view possui 11pixel(1/100avos).*/
+    min-height: 100vh;/*ViewPort heigth*/ /*ViewPort Width*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+}
+header > h1{
+    padding-top: 50px;
+    /* text-transform: uppercase; - Utilizar todas a letras maiúsculas */
+    font-variant: small-caps; /*Letras maíusculas, contudo as primeiras letras de cada palavra são maiores que as demais*/ 
+    font-size: 15vw; /*Texto Responsivo*/
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover, footer:hover{
+    text-decoration: underline;
+}
+section{ /*Configurações para ambas as section*/
+    padding-top: 10vh; /*Criando os espaços para realizar o efeito paralax*/
+    padding-bottom: 10vh;/*Criando os espaços para realizar o efeito paralax*/
+    line-height: 2em; /*Espaçamento entre as linhas*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;/*Texto Responsivo*/
+}
+section > p{
+    padding-bottom: 2em; /*Espaço entre paragrafos*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(59, 53, 53, 0.575);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.425);/*Efeito de sombra interna para dá a impressão de que a imagem está por baixo da folha branca*/
+    background-attachment: fixed; /*Efeito paralax - Ultimo a ser feito, apos realizar todas as configurações*/
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.555);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+section#img01{
+    background-image: url('../background001.jpg'); /*Colocando a imagem para efeito paralax*/
+    background-position: right center; /*Sempre observar o ponto forte da imagem, nesse caso é a direita e centralizado*/
+    background-size: cover;
+}
+section#img02{
+    background-image: url('../background002.jpg');/*Colocando a imagem para efeito paralax*/
+    background-position: right center;/*Sempre observar o ponto forte da imagem, nesse caso é a direita e centralizado*/
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}

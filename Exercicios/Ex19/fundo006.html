@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Sempre quando for utilizar uma imagem, primeiro deve colcoar uma cor de fundo(background-colo) pois a cor do fundo irá carregar primeiro*/
+        body{
+           background-color: black;
+           background-image: url(wallpaper002.jpg); 
+           background-position: center center; /* Centralizando a imagem no centro e no topo*/
+           background-repeat: no-repeat;/* não repetir a imagem*/
+           height: 100vw; /*100% da tela*/
+           /*Por padrao o background-size vem em auto 
+           A opção cover, exibe 100% da tela(vw), porém não exibe 100%da imagem, a imagem vai sendo ajustada para que não haja distorção*/
+           background-size: cover; /*100% de largura, e 100% de tamanho, porém a imagem vai ficando distorcida a medida que vai aumentando e diminuindo o tamanho da página*/
+           background-attachment: fixed; /*background-attachment é o mesmo que vinculo: tem duas opções - scroll, o fundo vai rolar a medida que rolar o conteudo, - fixed, o conteúdo vai rolar, porem a imagem vai ficar fixa*/
+
+           /*
+           Shorthand - background -> nessa ordem: color - image - position - repeat - size - attachment
+
+           background: black url(wallpaper002.jpg) center center no-repeat cover fixed;
+
+           */
+        }
+        main{
+            background-color: white;
+            max-width: 500px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis exercitationem iusto nemo dolor aspernatur ex, molestiae corrupti! Eligendi, sapiente rerum quis qui inventore perspiciatis! Voluptatibus minus repudiandae excepturi assumenda fugiat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro asperiores assumenda incidunt rem autem qui. A dolorum, sint suscipit quas quia iure doloremque reiciendis? Quaerat fugiat quae saepe id. Itaque!</p>
+    </main>
+</body>
+</html>
